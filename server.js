@@ -5,8 +5,8 @@ const mongoose = require("mongoose");
 // compresses content during transmission
 const compression = require("compression");
 // sets up the port for which the user must use to access to website
-// http://localhost:8080/
-const PORT = process.env.PORT || 8080;
+// http://localhost:80/
+const PORT = process.env.PORT || 80;
 // sets up express to use as the app back-end
 const app = express();
 // sets the app to use compression
