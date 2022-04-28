@@ -18,7 +18,7 @@ app.use(express.json());
 // allowing users to access files stored in the folder
 app.use(express.static("public"));
 // defines the mongDB database we will connect to
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
